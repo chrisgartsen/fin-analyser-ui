@@ -12,6 +12,9 @@ $twitter-invert: findColorInvert($twitter);
 $github: #333;
 $github-invert: findColorInvert($github);
 
+$footer-background-color: $grey;
+
+
 @import "~bulma/sass/utilities/derived-variables";
 
 // 3. Add new color variables to the color map.
@@ -26,3 +29,4 @@ $colors: map-merge($colors, $addColors);
 @import "~buefy/src/scss/buefy";
 
 // 4. Provide custom buefy overrides and site styles here
+

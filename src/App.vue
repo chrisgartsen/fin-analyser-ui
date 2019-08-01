@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="site">
     <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <a class="navbar-item is-size-2" href="/">
@@ -61,6 +61,30 @@
   </div>
 </nav>
 
+  <div class="main">
     <router-view/>
   </div>
+
+
+<footer class="footer is-primary">
+  <div class="content has-text-centered has-text-white">
+    <p>
+      Bank Analyser
+    </p>
+  </div>
+</footer>
+
+  </div>
 </template>
+
+<style>
+  .site {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  .main {
+    flex: 1;
+  }
+</style>
