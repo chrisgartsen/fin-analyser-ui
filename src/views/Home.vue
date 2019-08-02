@@ -1,14 +1,7 @@
 <template>
   <div class="home">
-    Home
 
-        <div class="field">
-            <b-checkbox v-model="checkboxCustom"
-                true-value="Yes"
-                false-value="No">
-                Blah
-            </b-checkbox>
-        </div>
+    <router-link to="/import">Import</router-link>
 
   </div>
 </template>

@@ -8,7 +8,9 @@ import store from './store'
 import './registerServiceWorker'
 import './assets/scss/app.scss'
 
-Vue.use(Buefy)
+Vue.use(Buefy, {
+  defaultIconPack: 'fas',
+})
 
 Vue.config.productionTip = false
 

@@ -13,7 +13,6 @@
   <div id="navbarBasicExample" class="navbar-menu">
     <div class="navbar-start">
       <router-link to="/login" class="navbar-item">An action</router-link>
-
     </div>
 
     <div class="navbar-end">
@@ -23,6 +22,7 @@
         </div>
       </div>
     </div>
+
   </div>
 </nav>
 </template>
