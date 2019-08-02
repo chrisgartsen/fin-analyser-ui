@@ -13,7 +13,20 @@
         <b-steps v-model="activeStep" :animated="true" :has-navigation="true">
 
           <b-step-item label="Select file" :clickable="true">
-              Lorem ipsum dolor sit amet.
+            
+            <b-field class="file">
+        <b-upload v-model="file">
+            <a class="button is-primary">
+                <b-icon icon="upload"></b-icon>
+                <span>Select file</span>
+            </a>
+        </b-upload>
+        <span class="file-name" v-if="file">
+            {{ file.name }}
+        </span>
+    </b-field>
+
+
           </b-step-item>
 
           <b-step-item label="Profile" :clickable="true">
@@ -36,7 +49,8 @@ export default {
   name: 'import-wizard',
   data() {
     return {
-      activeStep: 0
+      activeStep: 0,
+      file: null
     }
   }
 }
