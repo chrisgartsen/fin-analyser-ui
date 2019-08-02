@@ -6,7 +6,7 @@
             <b-checkbox v-model="checkboxCustom"
                 true-value="Yes"
                 false-value="No">
-                {{ checkboxCustom }}
+                Blah
             </b-checkbox>
         </div>
 
